@@ -29,5 +29,13 @@
     "sass": "^1.49.9",
     "svgo": "^2.8.0",
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.0.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "video.js": "^8.6.0"
   }
 }

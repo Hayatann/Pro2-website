@@ -1,11 +1,11 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+const { icon = 'mdi:rocket', title = 'Title', iconUrl = "#" } = Astro.props
 ---
 
 <div class="feature flex flex-col gap-4">
-  <Icon name={icon} />
+  <a href={iconUrl}><Icon name={icon} /></a>
   <div class="content">
     <h3>{title}</h3>
     <p>
