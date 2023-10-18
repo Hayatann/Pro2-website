@@ -11,5 +11,6 @@ export default defineConfig({
   integrations: [mdx(), tailwind({
     applyBaseStyles: false
   }), compress(), react()],
-  site: 'https://hayatann.net'
+  site: 'https://hayatann.net',
+  output: 'static',
 });
