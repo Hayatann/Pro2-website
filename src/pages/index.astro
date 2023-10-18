@@ -4,13 +4,14 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+import VideoPlayer from '../components/VideoPlayer.astro'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
   <section class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">使用技術，フレームワーク</h2>
+      <h2 class="mb-16 text-6xl">使用技術，フレームワーク，ライブラリ</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <Feature icon="flutter" title="Flutter" iconUrl="https://flutter.dev/">
           基本的にはFlutterを利用しモバイルアプリとして開発をしました。
@@ -27,28 +28,20 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
+  <VideoPlayer src="/pro2Movie.mp4">
+    <h2>実際の動作</h2>
     <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
+      ホーム画面ではの支出のタイトル，ジャンル，日付を入力できます。
+      登録ボタンを押し，記録画面に移ると，支出のグラフが円グラフとして表示されます。
+      また，カード形式でその支出が確認可能です。
+      もちろんデータはデバイス上に保存されアプリを閉じても保持されます。
     </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
+  </VideoPlayer>
   <section class="mt-64 mb-32">
     <div class="container">
       <h2 class="mb-16 text-6xl">Counters</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" title="Stars" sub="On GitHub" />
+        <Counter count="130" title="Hours" sub="かかった時間" />
         <Counter count="17" title="Accessible" sub="Components" />
         <Counter count="500" title="Commits" sub="Merged" />
         <Counter count="18+" title="Months" sub="Since launch" />
