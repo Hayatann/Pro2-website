@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.0.3",
-    "@astrojs/vercel": "^5.0.2",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "react": "^18.0.0",
