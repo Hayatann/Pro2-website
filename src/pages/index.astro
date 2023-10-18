@@ -39,6 +39,20 @@ import VideoPlayer from '../components/VideoPlayer.astro'
   </VideoPlayer>
   <section class="mt-64 mb-32">
     <div class="container">
+      <h2 class="mb-16 text-4xl">苦労したところ，工夫したところ</h2>
+    <p class="text-2xl">
+      Flutterをしっかりと触ったのは初めてだったので，
+      状態管理の手法やネイティブ側の機能などの実装に苦労した。
+      UIの実装はFlutter側が多くのWidgetを用意してくれているので，
+      そこまで違和感の無いデザインにすることができたと思う。
+      また，ローカルにデータを保存したかったのでSQLiteを利用したが，
+      DB操作をいろいろ実装するのは初めてだったので，少し苦労した。
+      まだまだ設計，実装ともに粗い部分が多いので，今後も改善していきたい。
+    </p>
+    </div>
+  </section>
+  <section class="mt-64 mb-32">
+    <div class="container">
       <h2 class="mb-16 text-6xl">Counters</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-2">
         <Counter count="5" title="Hours" sub="かかった時間" />
